@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Playground</title>
+  <title>Playground <%= @title %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div id="nav">
+    <div class="center-wrap">
+        <a href="<%= root_path %>">Home</a>
+        <a href="<%= type_path %>">Typography</a>
+        <a href="<%= buttons_path %>">Buttons</a>
+        <a href="<%= forms_path %>">Forms</a>
+        <a href="<%= modals_path %>">Modals</a>
+        <a href="<%= errors_path %>">Errors/Alerts</a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="center-wrap">
+    <%= yield %>
+</div>
 
 </body>
 </html>
