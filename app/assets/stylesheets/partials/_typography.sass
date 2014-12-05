@@ -1,35 +1,41 @@
 // TYPEFACES
 
+$headers: "DIN Condensed", "Helvetica"
+$sans_serifs: "Proxima Nova", Arial, sans-serif
+$serifs: Georgia, "Museo Slab", serif
+
 // GLOBAL
 
 html, body
-    font-size: 100%
+    font-size: 62.5%
+// rembase = 10px
 
 p, h1, h2, h3, h4, h5, h6, a, ul, ol, li, blockquote, span, i
-    font-size: 12pt
-    font-family: "Proxima Nova"
+    font-family: $sans_serifs
+    font-size: 1.4rem
 
 // HEADERS
 
 h1, h2, h3, h4, h5, h6
-    font-family: "Helvetica"
-    line-height: 3em
+    font-family: $headers
     text-transform: capitalize
     font-weight: 200
 
 h1
-    font-size: 2.5rem
+    font-size: 3.7rem
+    line-height: 5.1rem
 
 h2
-    font-size: 1.5rem
+    font-size: 2.5rem
+    line-height: 3.7rem
     color: $highlight_color
 
 // TEXT
 
 p
     font-weight: 400
-    font-size: .95rem
-    line-height: 1.5rem
+    font-size: 1.4rem
+    line-height: 2.5rem
     padding-bottom: 20px
 
 blockquote
@@ -37,6 +43,8 @@ blockquote
     color: #777779
     padding: 20px
     font-style: italic
+    font-family: $serifs
     text-align: center
-    font-size: 1.3rem
+    font-size: 1.7rem
+    line-height: 2.8rem
     margin-bottom: 20px
